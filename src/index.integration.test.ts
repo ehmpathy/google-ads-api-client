@@ -1,6 +1,11 @@
 /* eslint-disable @typescript-eslint/camelcase */
 import * as dotenv from 'dotenv';
-import { getAuthenticatedGoogleAdsApiGrpcTransport, KeywordPlanIdeaServiceClient, isGrpcError, extractGoogleAdsApiError } from './index';
+import {
+  getAuthenticatedGoogleAdsApiGrpcTransport,
+  KeywordPlanIdeaServiceClient,
+  isGrpcError,
+  extractGoogleAdsApiError,
+} from './index';
 import {
   CustomerServiceClient,
   GenerateKeywordIdeasRequest,
@@ -84,8 +89,11 @@ describe('index', () => {
           includeAdultKeywords: false,
           pageToken: undefined as any, // google's proto typedef doesn't match comments here
           pageSize: 10,
-          keywordPlanNetwork: KeywordPlanNetworkEnum_KeywordPlanNetwork.GOOGLE_SEARCH,
-          keywordAnnotation: [KeywordPlanKeywordAnnotationEnum_KeywordPlanKeywordAnnotation.KEYWORD_CONCEPT],
+          keywordPlanNetwork:
+            KeywordPlanNetworkEnum_KeywordPlanNetwork.GOOGLE_SEARCH,
+          keywordAnnotation: [
+            KeywordPlanKeywordAnnotationEnum_KeywordPlanKeywordAnnotation.KEYWORD_CONCEPT,
+          ],
           seed: {
             oneofKind: 'keywordSeed',
             keywordSeed: { keywords: ['junk removal'] },
