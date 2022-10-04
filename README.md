@@ -5,13 +5,6 @@
 
 A friendly and exhaustive client to the [google-ads-api](https://developers.google.com/google-ads/api/docs/start), code generated directly from google's published `protobuf` schema.
 
-A friendly and exhaustive client to the google-ads-api, code generated directly from google's published `protobuf` schema.
-
-# google-ads-api-client
-
-An easy to use and exhaustive client to the google-ads-api, code generated directly from google's published `protobuf` schema.
-
-
 # overview
 
 this package is a thin utility making it easy to use the `grpc` endpoints that google exposes for their google ads api.
