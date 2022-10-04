@@ -1,6 +1,6 @@
 {
   "name": "google-ads-api-client",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A friendly and exhaustive client to the google-ads-api, code generated directly from google's published protobuf schema.",
   "author": "UladKasach @uladkasach",
   "license": "MIT",
