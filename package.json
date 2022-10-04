@@ -32,7 +32,7 @@
     "test:lint": "eslint -c ./.eslintrc.js src/**/*.ts",
     "test:unit": "jest --forceExit --verbose --passWithNoTests",
     "test:integration": "jest -c ./jest.integration.config.js --forceExit --verbose --passWithNoTests",
-    "test": "npm run test:types && npm run test:lint && npm run test:unit && npm run test:integration",
+    "test": "npm run test:types && npm run test:lint && npm run test:unit",
     "prepublish": "npm run build",
     "preversion": "npm run prepublish && npm run test",
     "postversion": "git push origin HEAD --tags --no-verify"
