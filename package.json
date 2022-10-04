@@ -1,0 +1,63 @@
+{
+  "name": "google-ads-api-client",
+  "version": "0.0.0",
+  "description": "A friendly and exhaustive client to the google-ads-api, code generated directly from google's published protobuf schema.",
+  "author": "UladKasach @uladkasach",
+  "license": "MIT",
+  "repository": "ehmpathy/google-ads-api-client",
+  "homepage": "https://github.com/ehmpathy/google-ads-api-client",
+  "keywords": [
+    "google-ads-api",
+    "google",
+    "ads",
+    "api",
+    "client",
+    "protobuf",
+    "grpc"
+  ],
+  "bugs": "https://github.com/ehmpathy/google-ads-api-client/issues",
+  "main": "dist/index.js",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build:clean": "rm -rf ./dist",
+    "build:ts": "tsc -p ./tsconfig.build.json",
+    "build": "npm run build:clean && npm run build:ts",
+    "test:types": "tsc --noEmit",
+    "test:lint": "eslint -c ./.eslintrc.js src/**/*.ts",
+    "test:unit": "jest --forceExit --verbose --passWithNoTests",
+    "test:integration": "jest -c ./jest.integration.config.js --forceExit --verbose --passWithNoTests",
+    "test": "npm run test:types && npm run test:lint && npm run test:unit && npm run test:integration",
+    "prepublish": "npm run build",
+    "preversion": "npm run prepublish && npm run test",
+    "postversion": "git push origin HEAD --tags --no-verify"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "@types/joi": "^14.3.4",
+    "@types/lodash.pick": "^4.4.6",
+    "@types/uuid": "^3.4.5",
+    "@typescript-eslint/eslint-plugin": "2.19.0",
+    "@typescript-eslint/parser": "2.19.0",
+    "core-js": "^3.15.2",
+    "dotenv": "^8.1.0",
+    "eslint": "6.1.0",
+    "eslint-config-airbnb-base": "14.0.0",
+    "eslint-config-airbnb-typescript": "7.0.0",
+    "eslint-config-prettier": "6.10.0",
+    "eslint-plugin-import": "2.20.1",
+    "eslint-plugin-prettier": "3.1.2",
+    "husky": "^1.3.1",
+    "jest": "^25.5.4",
+    "prettier": "^2.0.4",
+    "ts-jest": "^25.4.0",
+    "uuid": "^3.3.3"
+  },
+  "dependencies": {
+    "typescript": "^3.8.3"
+  }
+}
