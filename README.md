@@ -1,7 +1,7 @@
 # google-ads-api-client
 
-![ci_on_commit](https://github.com/uladkasach/google-ads-api-client/workflows/ci_on_commit/badge.svg)
-![deploy_on_tag](https://github.com/uladkasach/google-ads-api-client/workflows/deploy_on_tag/badge.svg)
+![ci_on_commit](https://github.com/ehmpathy/google-ads-api-client/workflows/ci_on_commit/badge.svg)
+![deploy_on_tag](https://github.com/ehmpathy/google-ads-api-client/workflows/deploy_on_tag/badge.svg)
 
 A friendly and exhaustive client to the [google-ads-api](https://developers.google.com/google-ads/api/docs/start), code generated directly from google's published `protobuf` schema.
 

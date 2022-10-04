@@ -8,7 +8,12 @@ module.exports = {
   transform: {
     '^.+\\.(ts|tsx)$': 'ts-jest',
   },
-  testMatch: ['**/src/**/?(*.)+(spec|test).(js|ts)'],
+  testMatch: [
+    // note: order matters
+    '**/*.test.ts',
+    '!**/*.acceptance.test.ts',
+    '!**/*.integration.test.ts',
+  ],
   testEnvironment: 'node',
   setupFiles: ['core-js'], // enables .flat; https://stackoverflow.com/a/59285424/3068233
 };
