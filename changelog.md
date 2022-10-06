@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.1.1](https://www.github.com/ehmpathy/google-ads-api-client/compare/v1.1.0...v1.1.1) (2022-10-04)
+
+
+### Bug Fixes
+
+* **readme:** update the readme to fix formatting error ([e1d5bf2](https://www.github.com/ehmpathy/google-ads-api-client/commit/e1d5bf20ef0191ea3a7ee8c7b4dd91228f3c2643))
+
 ## [1.1.0](https://www.github.com/ehmpathy/google-ads-api-client/compare/v1.0.0...v1.1.0) (2022-10-04)
 
 
