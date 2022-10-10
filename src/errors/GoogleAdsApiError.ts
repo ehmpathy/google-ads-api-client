@@ -7,7 +7,11 @@ export class GoogleAdsApiError extends Error {
     super(
       `
 Google Ads Api has reported the following failure:
-${JSON.stringify(failure, null, 2)}
+${JSON.stringify(
+  failure,
+  (key, value) => (typeof value === 'bigint' ? value.toString() : value), // tell json how to stringify bigints; https://github.com/GoogleChromeLabs/jsbi/issues/30#issuecomment-521460510
+  2,
+)}
         `.trim(),
     );
     this.failure = failure;
@@ -20,7 +24,11 @@ export class CouldNotExtractGoogleAdsApiError extends Error {
     super(
       `
 Could not extract a google ads api error from the following source error:
-${JSON.stringify(source, null, 2)}
+${JSON.stringify(
+  source,
+  (key, value) => (typeof value === 'bigint' ? value.toString() : value), // tell json how to stringify bigints; https://github.com/GoogleChromeLabs/jsbi/issues/30#issuecomment-521460510
+  2,
+)}
     `.trim(),
     );
     this.source = source;
