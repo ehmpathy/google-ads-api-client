@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.1.2](https://www.github.com/ehmpathy/google-ads-api-client/compare/v1.1.1...v1.1.2) (2022-10-10)
+
+
+### Bug Fixes
+
+* **errors:** ensure error instantiation doesn't fail due to bigint stringification ([0f72f90](https://www.github.com/ehmpathy/google-ads-api-client/commit/0f72f90ca6655e3e475938f6cc8ec32dff6b6e7c))
+
 ### [1.1.1](https://www.github.com/ehmpathy/google-ads-api-client/compare/v1.1.0...v1.1.1) (2022-10-04)
 
 
