@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.1.3](https://www.github.com/ehmpathy/google-ads-api-client/compare/v1.1.2...v1.1.3) (2022-10-17)
+
+
+### Bug Fixes
+
+* **auth:** enable setting login-customer-id and linked-customer-id on transport headers ([c04b4bf](https://www.github.com/ehmpathy/google-ads-api-client/commit/c04b4bf9f14c25bb2afe1c8f629c543647fd99f4))
+
 ### [1.1.2](https://www.github.com/ehmpathy/google-ads-api-client/compare/v1.1.1...v1.1.2) (2022-10-10)
 
 
